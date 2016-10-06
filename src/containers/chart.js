@@ -2,7 +2,7 @@
  * TO DO : Update CSS names
  * Add starting and ending date near the chart.
  */
-
+/* eslint-disable */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import $ from 'jquery';
