@@ -256,3 +256,10 @@ pre {
   position: absolute;
   z-index: 20;
 }
+
+.loading-gif {
+  align: middle;
+  margin: auto;
+  margin-top: 6em;
+  display: block;
+}
