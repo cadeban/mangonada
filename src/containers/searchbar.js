@@ -21,7 +21,7 @@ import AppBar from 'material-ui/AppBar';
 import {orange500, blue500} from 'material-ui/styles/colors';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import NavTabs from '../components/tabs';
-
+import $ from 'jquery';
 
 import RaisedButton from 'material-ui/RaisedButton'
 
@@ -75,6 +75,21 @@ class SearchBar extends Component {
         const hash = "/#" + this.state.urlEntered.slice().split('github.com')[1];
         window.location.hash = hash;
       }
+      // render loading screen
+      $('#container').empty();
+
+      let loading = d3.select('#container')
+        .append('svg')
+        .attr("width", window.innerWidth)
+        .attr("height", window.innerHeight);
+
+      loading.append('text')
+        .style("fill", "black")
+        .style("font-size", "56px")
+        .attr("x", (window.innerWidth / 2))
+        .attr("y", (window.innerHeight / 2))
+        .attr("text-anchor", "middle")
+        .text("Loading...");
     }
   }
 

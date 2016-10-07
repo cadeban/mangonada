@@ -42,14 +42,15 @@
     <form onInput="return filterRepo(event)">
       <input  type="text" class="form-control" placeholder="Keyword search">
     </form>
-    <div id="container"></div>
+    <div id="container" class="tab"></div>
 
-    <div id="stats" class ="hidden"></div>
+    <div id="stats" class ="hidden" class="tab"></div>
 
-    <div id ="word-cloud" class="hidden">
+    <div id ="word-cloud" class="hidden" class="tab">
 
     </div>
-    <div id="bubble-chart" class="hidden"></div>
+    <div id="bubble-chart" class="hidden" class="tab"></div>
+    <div id="loading"></div>
   </body>
   <script src="../build/bundle.js"></script>
 </html>
