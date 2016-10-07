@@ -42,6 +42,9 @@
     <form onInput="return filterRepo(event)">
       <input  type="text" class="form-control" placeholder="Keyword search">
     </form>
+    <div id="loading">
+      <h1 id="loading-text">Loading...</h1>
+    </div>
     <div id="container" class="tab"></div>
 
     <div id="stats" class ="hidden" class="tab"></div>
@@ -50,7 +53,8 @@
 
     </div>
     <div id="bubble-chart" class="hidden" class="tab"></div>
-    <div id="loading"></div>
+
+
   </body>
   <script src="../build/bundle.js"></script>
 </html>

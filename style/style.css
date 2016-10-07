@@ -6,6 +6,10 @@ body {
  top: 50%;
 }
 
+#container, #stats, #word-cloud, #bubble-chart {
+  z-index: 1;
+}
+
 #chart div {
   font: 10px sans-serif;
   background-color: steelblue;
@@ -234,3 +238,18 @@ pre {
     width: 50px;
     border-radius: 50%;
   }
+
+/* Loading Icon */
+#loading {
+  z-index: 20;
+  position: absolute;
+  top: 20;
+  left: 20;
+}
+
+#loading-text {
+  top: 200;
+  left: 200;
+  position: absolute;
+  z-index: 20;
+}

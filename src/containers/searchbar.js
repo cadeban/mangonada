@@ -76,20 +76,7 @@ class SearchBar extends Component {
         window.location.hash = hash;
       }
       // render loading screen
-      $('#container').empty();
-
-      let loading = d3.select('#container')
-        .append('svg')
-        .attr("width", window.innerWidth)
-        .attr("height", window.innerHeight);
-
-      loading.append('text')
-        .style("fill", "black")
-        .style("font-size", "56px")
-        .attr("x", (window.innerWidth / 2))
-        .attr("y", (window.innerHeight / 2))
-        .attr("text-anchor", "middle")
-        .text("Loading...");
+      $('#loading').removeClass('hidden');
     }
   }
 
